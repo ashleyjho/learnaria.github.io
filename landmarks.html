@@ -13,14 +13,14 @@
 <div id="top-bar">&nbsp; </div>
 <div class="page_wrapper">
 
-<div id="header">
+<div id="header" role="banner" aria-labelledby="section-title">
 	<div id="course_title_container" style="left:1em;">		
 	    <h1 id="section-title">Our Community Website</h1>
 	</div>
 </div>
 
 <div class="" style="z-index: auto; position: static; top: auto;" id="lrg_topnav">
-    <div style="width: 100%;" id="topnavlistcontainer" aria-label="main navigation tabs">
+    <div style="width: 100%;" id="topnavlistcontainer" aria-label="tabs of the main" role="navigation">
         <a name="main-nav" id="main-nav"></a>
         <ul style="" id="topnavlist">
         <li><a href="index.html" accesskey="1" title="Back to Index Alt+1">Back to Index</a></li>
@@ -33,15 +33,15 @@
     </div> 
 </div>
 
-<div class="logoutbar">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
-<div class="crumbcontainer">
+<div class="logoutbar" aira-label="input bar to" role="search">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
+<div class="crumbcontainer" aria-label="breadcrumbs" role="region">
 		<div id="breadcrumbs" tabindex="0" aria-label="breadcrumb links">&nbsp;</div>
 </div>
 <div id="contentwrapper">
     <div id="lrg_content">
 		<div id="leftcolumn">
 		  <a id="menu"></a>
-		     <div id="side-menu" aria-label="left side menu" accesskey="0">
+		     <div id="side-menu" accesskey="0" aria-label="left side menu" role="navigation">
 		        <br/>
                 <h2 class="box"><span>Networking</span></h2>
                 <div class="box" id="menu_Networking">
@@ -72,9 +72,9 @@
 	<br style="clear:both;">
 	<a id="top"></a>
 
-<div class="profile">
-<h2>Join our community</h2>
-<div id="feedback">&nbsp;</div>
+<div class="profile" aria-labelledby="join_headline" role="main">
+<h2 id="join_headline">Join our community</h2>
+<div id="feedback" role="">&nbsp;</div>
 <form id="join_form">
 <dl>
 <dt>
@@ -86,7 +86,7 @@
 <label for="username">Username:</label><img src="images/required.gif"  alt="Required Field" class="img" />
 </dt>
 <dd><input id="username" class="input" type="text" value="" maxlength="30" size="20" name="username"  aria-required="true" aria-describedby="username_error"><br />
-        <span id="username_error">&nbsp;</span><br />
+        <span id="username_error" role="">&nbsp;</span><br />
 </dd>
 <dt>
     <label for="password">Password:</label>
@@ -94,7 +94,7 @@
 </dt>
 <dd>
     <input type="text" name="password" size="20" id="password" value="" class="input" /><br />
-    <span id="password_error">&nbsp;</span>
+    <span id="password_error" role="">&nbsp;</span>
 </dd>
 <dt>
     <label for="email">Email:</label>
@@ -102,7 +102,7 @@
 </dt>
 <dd>    
     <input type="text" name="email" size="30" id="email" value="" class="input"/><br />
-    <span id="email_error">&nbsp;</span>
+    <span id="email_error" role="">&nbsp;</span>
 </dd>
 <dt>
     <label for="fname">First Name:</label>
@@ -215,8 +215,8 @@
 		<br style="width:100%;clear:both;" />
 
 	</div>
-<div id="advertising">
-<h2>Advertising</h2>
+<div id="advertising" aria-labelledby="advertising_headline" role="complementary">
+<h2 id="advertising_headline">Advertising</h2>
 <div>
 <img src="images/rum_cover.jpg" alt="" />
 <br style="clear:both;"/>
@@ -229,7 +229,7 @@
 <p><br><br>&nbsp;</p>
 </div>
 
-<div id="footer"> Copyright &copy; <a href="" class="fake">Chang School.</a>
+<div id="footer" aria-label="copyright" role="contentinfo"> Copyright &copy; <a href="" class="fake">Chang School.</a>
 </div>
 
 </body>
