@@ -112,6 +112,11 @@
 			$panel.slideToggle({ duration: plugin.options.animationSpeed });
 			
 		}
+
+		$panel.attr({
+			'aria-hidden': false, // mark open panel as visible
+		});
+
 	};
 	
  Plugin.prototype.onKeyDown = function (event) {
